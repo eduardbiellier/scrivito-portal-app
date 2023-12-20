@@ -1,7 +1,7 @@
 import { provideComponent, isEditorLoggedIn, load, Obj, urlFor } from 'scrivito'
 import { Dropdown } from './DropdownObjClass'
 import { useEffect } from 'react'
-import '../../assets/stylesheets/bootstrap-icons.scss'
+import '../../assets/stylesheets/vendors/_bootstrap_icons.scss'
 
 provideComponent(Dropdown, ({ page }) => {
   useEffect(() => {
