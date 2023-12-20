@@ -2,23 +2,23 @@
 ================================================== */
 @mixin settings-logo-color() {
   background: url('../images/settings-logo-color.svg') no-repeat 10px center /
-  102px 23px !important;
+    102px 23px !important;
 }
 @mixin dxhub-logo-color() {
   background: url('../images/dxhub-logo-color.svg') no-repeat 10px center / 98px
-  23px !important;
+    23px !important;
 }
 @mixin neoletter-logo-color() {
   background: url('../images/neoletter-logo-color.svg') no-repeat 10px center /
-  125px 23px !important;
+    125px 23px !important;
 }
 @mixin scrivito-logo-color() {
   background: url('../images/scrivito-logo-color.svg') no-repeat 10px center /
-  100px 23px !important;
+    100px 23px !important;
 }
 @mixin pisa-logo-color() {
   background: url('../images/pisa-logo-color.svg') no-repeat 10px center / 125px
-  23px !important;
+    23px !important;
 }
 
 @mixin spaceman() {
@@ -43,13 +43,12 @@
 
 /* Aspect Ratio for images
 ================================================== */
-@mixin aspect-ratio ($width, $height) {
+@mixin aspect-ratio($width, $height) {
   position: relative;
   &:before {
-    content: "";
+    content: '';
     display: block;
-  //   padding-top: math.div($height, $width) * 100%; // Note: replace code below with this when it's depreciated //
-    padding-top: ($height / $width) * 100%;
+    padding-top: calc($height / $width) * 100%; // Note: replace code below with this when it's depreciated //
     width: 100%;
   }
   > .content {
