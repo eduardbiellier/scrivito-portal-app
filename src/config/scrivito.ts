@@ -1,4 +1,5 @@
 import { configure } from 'scrivito'
+import { siteForUrl, baseUrlForSite } from './multiSite'
 
 export function configureScrivito() {
   const config: Parameters<typeof configure>[0] = {
@@ -17,6 +18,8 @@ export function configureScrivito() {
         'https://*.pages.dev',
       ],
     },
+    siteForUrl,
+    baseUrlForSite,
   }
 
   if (!import.meta.env.SCRIVITO_TENANT) {
