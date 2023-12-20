@@ -22,6 +22,9 @@ nav.navbar {
     margin: auto;
     max-width: 1500px;
   }
+  a {
+    text-decoration: none;
+  }
   button,
   .btn {
     margin-bottom: 0;
@@ -86,6 +89,9 @@ nav.navbar {
     .navbar-nav {
       @include media-breakpoint-up(lg) {
         align-items: center;
+      }
+      a {
+        text-decoration: none;
       }
     }
     .navbar-nav.navbar-left {
