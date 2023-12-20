@@ -1,0 +1,46 @@
+/* Global styles
+================================================== */
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  color: $font-color;
+  font-family: $brand-font-medium;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sr-only {
+  display: none;
+}
+
+.xl-white-space {
+  display: block;
+  padding: 3.5rem;
+}
+
+.lg-white-space {
+  display: block;
+  padding: 2rem;
+}
+
+.md-white-space {
+  display: block;
+  padding: 1rem;
+}
+
+.sm-white-space {
+  display: block;
+  padding: .5rem;
+}
+
+.flexbox-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

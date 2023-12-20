@@ -1,0 +1,19 @@
+/* reset
+====================================================== */
+div.container-fluid {
+  padding-left: $grid-layout-spacing;
+  padding-right: $grid-layout-spacing;
+  @include media-breakpoint-up(xl){
+    max-width: 1500px;
+  }
+}
+
+div.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div[class*="col-"] {
+  padding-left: $grid-layout-spacing;
+  padding-right: $grid-layout-spacing;
+}

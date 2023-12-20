@@ -1,0 +1,26 @@
+/* Buttons
+====================================================== */
+button,
+.btn {
+  margin-bottom: .5rem;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  border: 0;
+  border-radius: $border-radius-lg;
+  font-family: $brand-font-semi-bold;
+  padding: .35rem 1.2rem .5rem;
+}
+
+.btn.btn-secondary-bordered {
+  border: 2px solid;
+  border-radius: $border-radius-lg;
+  font-family: $brand-font-semi-bold;
+  padding: .35rem 1.2rem .5rem;
+}
+
+.btn.custom-btn-lg {
+  font-family: $brand-font-bold;
+  padding: .5rem 1.6rem;
+}

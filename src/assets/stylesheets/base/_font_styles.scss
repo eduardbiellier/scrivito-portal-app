@@ -1,0 +1,82 @@
+/* Custom fonts styles
+================================================== */
+:root {
+  font-size: $base-size-font;
+
+  h1,
+  .h1 {
+    font-size: $heading-1;
+  }
+
+  h2,
+  .h2 {
+    font-size: $heading-2;
+  }
+
+  h3,
+  .h3 {
+    font-size: $heading-3;
+  }
+
+  h4,
+  .h4 {
+    font-size: $heading-4;
+  }
+
+  h5,
+  .h5 {
+    font-size: $heading-5;
+  }
+
+  h6,
+  .h6 {
+    font-size: $heading-6;
+  }
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    font-family: $brand-font-bold;
+    hyphens: auto;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+  }
+
+  p,
+  .p {
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+}
+
+a {
+  color: $jr-orange;
+  text-decoration: none;
+  &:hover {
+    color: $jr-orange;
+  }
+}
+
+.semi-bold-font {
+  font-family: $brand-font-semi-bold;
+}
+
+.light-weight-font {
+  font-family: $brand-font-regular;
+}
+
+.text-bold,
+b {
+  font-family: $brand-font-bold;
+}

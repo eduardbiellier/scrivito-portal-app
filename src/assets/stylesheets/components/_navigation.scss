@@ -1,0 +1,274 @@
+/* Navigation
+================================================== */
+
+nav.custom-navbar-bkgrd-color {
+  background-color: $brand-white;
+  border: 2px solid $grey-border;
+  color: $font-color;
+  @include media-breakpoint-up(lg) {
+    border-bottom: 0;
+  }
+}
+
+nav.navbar {
+  background-color: transparent;
+  color: $brand-white;
+  font-family: $brand-font-bold;
+  padding: 0rem 2rem;
+  @include media-breakpoint-up(sm) {
+    padding: 0rem 4rem;
+  }
+  @include media-breakpoint-up(xl){
+    margin: auto;
+    max-width: 1500px;
+  }
+  button,
+  .btn {
+    margin-bottom: 0;
+  }
+  .navbar-brand {
+    img {
+      height: 60px;
+      width: auto;
+    }
+  }
+  .navbar-toggler.active {
+    .line-1 {
+      transform: rotate(135deg);
+      margin-top: 7px;
+      margin-left: -2px;
+    }
+    .line-2 {
+      transform: rotate(45deg);
+      margin-top: -2px;
+      margin-left: -2px;
+    }
+  }
+  .navbar-toggler {
+    border: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    &:focus,
+    &:focus-visible {
+      box-shadow: none;
+    }
+    .wrapper-lines {
+      position: relative;
+    }
+    .lines {
+      background: $brand-white;
+      display: block;
+      height: 2px;
+      width: 15px;
+    }
+    .line-1 {
+      transform: rotate(0deg);
+      margin-top: 2px;
+      margin-left: -2px;
+    }
+    .line-2 {
+      transform: rotate(0deg);
+      margin-top: 5px;
+      margin-left: -2px;
+    }
+    .animate {
+      transition: .3s cubic-bezier(0.1, 0.02, 0.2, 1);
+    }
+  }
+  .navbar-collapse {
+    border-bottom: 2px solid $brand-white;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    @include media-breakpoint-up(lg){
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .navbar-nav {
+      @include media-breakpoint-up(lg) {
+        align-items: center;
+      }
+    }
+    .navbar-nav.navbar-left {
+      border-bottom: 2px solid $brand-white;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      @include media-breakpoint-up(lg) {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        .dropdown-menu {
+          left: 50%;
+          right: auto;
+          transform: translateX(-50%);
+        }
+        .dropdown-menu::after {
+          left: 50%;
+          margin-left: -11px;
+        }
+      }
+      .nav-item.dropdown .nav-link {
+        border-right: 1px solid $brand-white;
+        @include media-breakpoint-up(lg){
+          border-right: 0;
+        }
+      }
+      .dropdown-toggle {
+        margin-left: .5rem;
+        @include media-breakpoint-up(lg){
+          margin-left: 0;
+        }
+      }
+    }
+    .navbar-nav.navbar-right {
+      .dropdown-menu {
+        left: auto;
+        right: 0;
+      }
+      @include media-breakpoint-up(lg) {
+        .dropdown-menu::after {
+          right: .45rem;
+        }
+      }
+    }
+    .nav-item {
+      cursor: pointer;
+    }
+    .nav-item.dropdown:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+    .nav-link,
+    .nav-link.active {
+      color: $brand-white;
+      &:active,
+      &:hover,
+      &:focus {
+        color: $brand-white;
+      }
+    }
+    .nav-link {
+      display: inline-block;
+      flex: 1;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+    .dropdown-toggle.active {
+      .bi-chevron-down {
+        transform: rotate(-180deg);
+      }
+    }
+    .dropdown-toggle {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      i {
+        padding: .35rem .6rem .35rem .45rem;
+        transform: rotate(0deg);
+        transition: .3s transform ease-in-out;
+        display: inline-block;
+      }
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown-menu.has-search-form {
+      li {
+        a {
+          @include media-breakpoint-up(lg) {
+            margin: 0 1.5rem;
+          }
+         }
+      }
+    }
+    .dropdown-menu {
+      background-color: transparent;
+      border-radius: 0;
+      border-top: 1px solid $brand-white;
+      color: $font-color;
+      font-family: $brand-font-medium;
+      padding: 1rem .5rem 1.5rem .5rem;
+      @include media-breakpoint-up(lg) {
+        background-color: $brand-white;
+        border: 2px solid $grey-border;
+        padding: 1.5rem .5rem;
+      }
+      li {
+        a {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+        a.dropdown-item {
+          color: $brand-white;
+          padding: .35rem 1.5rem;
+          white-space: normal;
+          @include media-breakpoint-up(lg) {
+            color: $font-color;
+            white-space: nowrap;
+          }
+          span {
+            border-bottom: 2px solid transparent;
+            transition: all .1s ease-in-out;
+          }
+        }
+        .dropdown-item.active,
+        .dropdown-item:active,
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+          background: transparent;
+          span {
+            border-bottom: 2px solid $jr-orange;
+          }
+        }
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      .dropdown-menu::after {
+        bottom: 100%;
+        border: solid rgba(0,0,0,0);
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255,255,255,0);
+        border-bottom-color: #fff;
+        border-width: 8px;
+      }
+    }
+    form.search-form {
+      margin-bottom: 1.5rem;
+      margin-top: .5rem;
+      padding: 0 1.5rem;
+      .form-control {
+        background-color: $email-soft-blue;
+        border-radius: $border-radius-lg 0 0 $border-radius-lg;
+        border-right: 0;
+        padding: .5rem 0rem .5rem 1.5rem;
+        &:focus-visible,
+        &:focus {
+          border-right: 0;
+          border: 2px solid lighten($jr-middlegrey, 35%);
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+      button,
+      .btn {
+        background-color: $email-soft-blue;
+        border: 2px solid lighten($jr-middlegrey, 35%);
+        border-left: 0;
+        border-radius: 0 $border-radius-lg $border-radius-lg 0;
+        margin-bottom: 0;
+        &:active,
+        &:hover,
+        &:focus {
+          background-color: $email-soft-blue;
+          border: 2px solid lighten($jr-middlegrey, 35%);
+          border-left: 0;
+        }
+      }
+    }
+  }
+}

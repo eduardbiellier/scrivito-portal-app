@@ -1,0 +1,162 @@
+/* Theme email
+================================================== */
+.theme-email {
+
+  /* header
+  ================================================== */
+  header {
+    background-color: $email-blue;
+    form.search-form {
+      .form-control {
+        border-right: 0;
+        &:focus,
+        &:focus-visible {
+          border-right: 0;
+        }
+      }
+    }
+    a,
+    .link {
+      color: $brand-white;
+      text-decoration: underline;
+    }
+  }
+  form {
+    .form-control{
+      &:focus,
+      &:focus-visible {
+        border-bottom: 2px solid $email-blue;
+        border-left: 2px solid $email-blue;
+        border-right: 0;
+        border-top: 2px solid $email-blue;
+        box-shadow: 0 0 0.15rem rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  .page-header,
+  .page-header-with-img {
+    color: $brand-white;
+    margin-bottom: .3rem;
+  }
+
+  /* buttons
+  ================================================== */
+  .btn.btn-primary {
+    background-color: $email-blue;
+    color: $brand-white;
+  }
+  .btn.btn-secondary {
+    background-color: $brand-white;
+    color: $font-color;
+  }
+  .btn.btn-secondary-bordered {
+    background-color: transparent;
+    border-color: $brand-white;
+    color: $brand-white;
+  }
+
+  /* lists
+  ================================================== */
+  .check-list {
+    ul {
+      li {
+        &:before {
+          color: $email-blue;
+        }
+      }
+    }
+  }
+
+  /* font styles
+  ================================================== */
+  .brand-font-color {
+    color: $email-blue;
+  }
+
+  /* boxes
+  ================================================== */
+  .box-brand-color {
+    background-color: $email-blue;
+    color: $brand-white;
+    a,
+    .link {
+      color: $brand-white;
+      text-decoration: underline;
+    }
+  }
+
+  /* cards
+  ================================================== */
+  .card {
+    color: $email-blue;
+  }
+  .card.card-brand-bkgrd {
+    .card-body {
+      background-color: $email-blue;
+      color: $brand-white;
+    }
+  }
+
+  /* custom forms from CRM
+  ================================================== */
+  header {
+    .has-custom-form {
+      color: $brand-white;
+
+      input[type=button] {
+        background-color: $brand-white;
+        color: $font-color;
+      }
+    }
+  }
+
+  .has-custom-form {
+    h1 {
+      text-align: center;
+    }
+    .zcsffield {
+      position: relative;
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 48%!important;
+      }
+      span {
+        position: absolute;
+        top: 0;
+        right: -.6rem;
+      }
+    }
+    input {
+      border-radius: $border-radius-sm;
+      margin-bottom: 1rem;
+      padding: .8rem;
+      width: 100%;
+    }
+    input[type=button] {
+      background-color: $email-blue;
+      border-radius: $border-radius-lg;
+      color: $font-color;
+      display: block;
+      font-family: $brand-font-bold;
+      margin: 1.5rem auto;
+      padding: .5rem 1.6rem;
+      text-align: center;
+      width: auto;
+    }
+    input[type=checkbox] {
+      margin-bottom: 1rem;
+      width: auto;
+    }
+    [name~="privacyPolicy"] {
+      width: 100%;
+    }
+    #errorMsgDiv {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+}
+

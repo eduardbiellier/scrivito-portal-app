@@ -1,0 +1,23 @@
+/* Variables
+================================================== */
+
+$base-size-font: 1rem; // 16px
+
+$heading-1: clamp(2rem, 1.8519rem + 0.7407vw, 2.8rem); // 32px 45px
+$heading-2: clamp(1.75rem, 1.6759rem + 0.3704vw, 2rem); // 28px 32px
+$heading-3: clamp(1.5rem, 1.4259rem + 0.3704vw, 1.75rem); // 24px 28px
+$heading-4: clamp(1.25rem, 1.0463rem + 0.5185vw, 1.5rem); // 20px 24px
+$heading-5: clamp(1.15rem, 1.0463rem + 0.5185vw, 1.25rem); // 18px 20px
+$heading-6: $base-size-font;
+
+$brand-font-regular: 'ManropeRegular', sans-serif;
+$brand-font-medium:'ManropeMedium', sans-serif;
+$brand-font-semi-bold:'ManropeSemiBold', sans-serif;
+$brand-font-bold: 'ManropeBold', sans-serif;
+$brand-font-extra-bold: 'ManropeExtraBold', sans-serif;
+
+$grid-layout-spacing: .3rem;
+
+$border-radius-sm: .5rem;
+$border-radius-md: .65rem;
+$border-radius-lg: 5rem;
