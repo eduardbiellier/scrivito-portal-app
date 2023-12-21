@@ -1,7 +1,11 @@
+import * as Scrivito from 'scrivito'
 import { provideLayoutComponent, ContentTag, CurrentPage } from 'scrivito'
 import { Homepage } from './HomepageObjClass'
 
-provideLayoutComponent(Homepage, ({ page }) => {
+// Workaround for SDK multisite bug
+provideLayoutComponent(Homepage, ({ /*page*/ }) => {
+  const page = Scrivito.Obj.root()
+
   return (
     <>
       <a href="#main" className="btn skip-to-content">
