@@ -111,6 +111,57 @@
     }
   }
 
+  header {
+    .card {
+      align-self: center;
+      height: auto;
+      margin-bottom: 3rem;
+      .card-body {
+        padding: .5rem 1.5rem 1.5rem;
+      }
+      .has-custom-form {
+        color: $font-color;
+        text-align: left;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+          color: $email-blue;
+          text-align: left;
+        }
+        #errorMsgDiv {
+          text-align: left;
+        }
+
+        .zcsffield,
+        .zcinputbox {
+          margin-left: 0;
+          margin-right: 0;
+          position: relative;
+          width: 100%;
+        }
+
+        input,
+        select,
+        textarea {
+          border: 2px solid $grey-border;
+        }
+
+        input[type=button],
+        input[type=submit] {
+          background-color: $email-blue;
+          color: $brand-white;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
   .has-custom-form {
     h1 {
       text-align: center;
@@ -140,6 +191,9 @@
     textarea {
       width: 100%;
     }
+    select {
+      height: 3.4rem;
+    }
     input,
     select,
     textarea {
@@ -153,7 +207,7 @@
       background-color: $email-blue;
       border: 0;
       border-radius: $border-radius-lg;
-      color: $font-color;
+      color: $brand-white;
       display: block;
       font-family: $brand-font-bold;
       margin: 1.5rem auto;
@@ -184,6 +238,53 @@
     }
     center {
       display: flex;
+    }
+  }
+
+  footer {
+    .has-custom-form {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        color: $email-blue;
+        font-family: $brand-font-bold;
+        font-size: 1rem;
+        text-align: left;
+      }
+
+      br,
+      #SIGNUP_DESCRIPTION,
+      #errorMsgDiv,
+      #REQUIRED_FIELD_TEXT,
+      [name~="SIGNUP_FORM_LABEL"]{
+        display: none;
+      }
+      .zcinputbox {
+        margin: 0 .5rem .5rem 0;
+        width: 100%;
+        @include media-breakpoint-up(md){
+          width: auto;
+        }
+      }
+      input {
+        background-color: $email-soft-blue;
+        border: 0;
+        border-radius: $border-radius-lg;
+        margin: 0;
+        padding: .55rem .8rem;
+        width: 100%;
+        @include media-breakpoint-up(md){
+          width: auto;
+        }
+      }
+      input[type=button],
+      input[type=submit] {
+        margin: 0;
+      }
     }
   }
 }

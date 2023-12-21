@@ -13,6 +13,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .sr-only {
@@ -40,6 +41,7 @@ body {
 }
 
 .flexbox-vertical-center {
+  align-items: baseline;
   display: flex;
   flex-direction: column;
   justify-content: center;
