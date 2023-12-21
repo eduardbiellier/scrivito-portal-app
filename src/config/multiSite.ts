@@ -32,8 +32,6 @@ export function siteForUrl(url: string) {
     )
 
   const siteId = exactMatchSiteId || versionOfNativeSiteId
-  console.log('exactMatchSiteId:', exactMatchSiteId)
-  console.log('versionOfNativeSiteId:', versionOfNativeSiteId)
 
   if (siteId) {
     return {
